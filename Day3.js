@@ -102,5 +102,89 @@ console.log(`${year} is ${isLeapYear}`)
 
 // Feature Request
 // 1. Number Check Script : Write a script that checks if a number is positive, negative or zero using if-else statements and log the result.
+let numCheck = 10
 
-// 2. Voting Eligibility Script :
+if (numCheck > 0) {
+  console.log(numCheck + ' is positive.')
+} else if (numCheck < 0) {
+  console.log(numCheck + ' is negative.')
+} else {
+  console.log(numCheck + ' is zero.')
+}
+
+// 2. Voting Eligibility Script : Create a script to check if a person is eligible to vote based on their age and log the result.
+let ageCheck = 18
+
+if (ageCheck >= 18) {
+  console.log('You are eligible to vote.')
+} else {
+  console.log('You are not eligible to vote.')
+}
+
+// 3. Day of the week Script : Write a script that uses a switch case to determine the day of the week based on a number and logs the day name.
+let dayNumber = 3 // Change this value to test different days (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
+
+let dayName
+
+switch (dayNumber) {
+  case 0:
+    dayName = 'Sunday'
+    break
+  case 1:
+    dayName = 'Monday'
+    break
+  case 2:
+    dayName = 'Tuesday'
+    break
+  case 3:
+    dayName = 'Wednesday'
+    break
+  case 4:
+    dayName = 'Thursday'
+    break
+  case 5:
+    dayName = 'Friday'
+    break
+  case 6:
+    dayName = 'Saturday'
+    break
+  default:
+    dayName = 'Invalid day number'
+}
+
+console.log(dayName)
+
+// 4.Grade Assignment Script : Create a script that uses a switch case to assign a grade based on a score and logs the grade.
+let scoreCheck = 85
+let gradeCheck
+
+switch (true) {
+  case scoreCheck >= 90 && scoreCheck <= 100:
+    gradeCheck = 'A'
+    break
+  case scoreCheck >= 80 && scoreCheck < 90:
+    gradeCheck = 'B'
+    break
+  case scoreCheck >= 70 && scoreCheck < 80:
+    gradeCheck = 'C'
+    break
+  case scoreCheck >= 60 && scoreCheck < 70:
+    gradeCheck = 'D'
+    break
+  case scoreCheck >= 0 && scoreCheck < 60:
+    gradeCheck = 'F'
+    break
+  default:
+    gradeCheck = 'Invalid score'
+}
+
+console.log('Your grade is: ' + gradeCheck)
+
+// 5.Leap year check script : Write a script that checks if the year is a leap year using multiple conditions and logs the result.
+let yearCheck = 2024 // Change this value to test different years
+
+if ((yearCheck % 4 === 0 && yearCheck % 100 !== 0) || yearCheck % 400 === 0) {
+  console.log(yearCheck + ' is a leap year.')
+} else {
+  console.log(yearCheck + ' is not a leap year.')
+}
